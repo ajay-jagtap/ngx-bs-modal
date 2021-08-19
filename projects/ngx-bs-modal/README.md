@@ -14,6 +14,7 @@ Compatible with bootstrap 3 and bootstrap 4.
 ```npm
 npm install ngx-bs-modal
 ```
+See [Live Demo](https://stackblitz.com/edit/angular-11-new-8uj7tw)
 
 ###Without bootstrap?
 Yes, you can create your own CSS. Just write css for .modal and .modal-dialog classes.
