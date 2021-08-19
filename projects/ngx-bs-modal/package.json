@@ -1,6 +1,6 @@
 {
   "name": "ngx-bs-modal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It is a library to make managment of bootstrap modal dialogs easier in Angular",
   "main": "ng-package.json",
   "repository": {
