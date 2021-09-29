@@ -15,6 +15,7 @@ Compatible with bootstrap 3 and bootstrap 4.
 npm install ngx-bs-modal
 ```
 See [Live Demo](https://ngx-bs-modal.web.app/)
+
 See [StackBlitz Demo](https://stackblitz.com/edit/angular-11-new-8uj7tw)
 
 ### Without bootstrap?
