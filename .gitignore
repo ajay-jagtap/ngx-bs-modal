@@ -14,6 +14,11 @@
 /package-lock.json
 /.gitignore
 
+# firebase files
+.firebaserc
+firebase.json
+.firebase
+
 # profiling files
 chrome-profiler-events*.json
 speed-measure-plugin*.json
