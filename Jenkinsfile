@@ -12,7 +12,7 @@ node {
         sh 'npm run test'
     }
 
-    stage('Test'){
+    stage('Build'){
         sh 'npm run build --prod'
     }
 }
