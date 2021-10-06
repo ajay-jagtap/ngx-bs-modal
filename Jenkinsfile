@@ -8,9 +8,9 @@ node {
         bat 'npm install'
     }
 
-    stage('Test'){
-        bat 'npm run test'
-    }
+    // stage('Test'){
+    //     bat 'npm run test'
+    // }
 
     stage('Build'){
         bat 'npm run build --prod'
