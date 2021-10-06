@@ -9,10 +9,10 @@ node {
     }
 
     stage('Test'){
-        bat 'ng test'
+        bat 'npm run test'
     }
 
     stage('Build'){
-        bat 'ng build --prod'
+        bat 'npm run build --prod'
     }
 }
