@@ -21,7 +21,7 @@ node {
     }
 
     stage('Push to Github') {
-        bat 'cd /dist/ngx-bs-modal-demo'
+        bat 'cd dist/ngx-bs-modal-demo'
         bat 'git checkout gh-pages'
         bat 'git add .'
         bat 'git commit -am "Pushed changes form jenkins"'
