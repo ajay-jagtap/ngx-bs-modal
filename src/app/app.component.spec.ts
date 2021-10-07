@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { BootstrapModalModule } from 'dist/ngx-bs-modal';
+import { BootstrapModalModule } from 'dist/ngx-bs-modal/public-api';
 
 import { AppComponent } from './app.component';
 import { AlertComponent } from './alert/alert.component';

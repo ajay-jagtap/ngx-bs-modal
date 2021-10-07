@@ -11,9 +11,9 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
-      "ngx-bs-modal": [
-        "dist/ngx-bs-modal"
-      ]
+      // "ngx-bs-modal": [
+      //   "dist/ngx-bs-modal"
+      // ]
     },
     "target": "es2015",
     "module": "es2020",
