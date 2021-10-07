@@ -27,12 +27,13 @@ node {
         bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test\\dist\\ngx-bs-modal-demo\\ C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test'
 
         // bat 'cd dist/ngx-bs-modal-demo'
-        // bat 'rmdir node_modules'
-        // bat 'rmdir dist'
-        // bat 'git checkout  -f gh-pages'
+        bat 'git checkout  -f gh-pages'
+        // bat 'rmdir dist /s'
+        // bat 'rmdir node_modules /s'
         // bat 'git add dist/ngx-bs-modal-demo'
+        bat 'git add .'
         // bat 'git reset --hard'
-        // bat 'git commit -m "Pushed changes form jenkins"'
-        // bat 'git push'
+        bat 'git commit -m "Pushed changes form jenkins"'
+        bat 'git push'
     }
 }
