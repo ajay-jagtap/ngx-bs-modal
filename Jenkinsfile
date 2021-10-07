@@ -28,6 +28,7 @@ node {
 
         // bat 'cd dist/ngx-bs-modal-demo'
         bat 'git checkout  -f gh-pages'
+        bat 'git pull'
         // bat 'rmdir dist /s'
         // bat 'rmdir node_modules /s'
         // bat 'git add dist/ngx-bs-modal-demo'
