@@ -24,7 +24,7 @@ node {
         bat 'git config --global user.email "ajayjagtap.10@gmail.com"'
         bat 'git config --global user.name "ajay-jagtap"'
         bat 'git config --global user.password "Ajayjagtap@123"'
-        bat 'xcopy C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/jenkins-test/dist/ngx-bs-modal-demo/ C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/jenkins-test /c /d /e /h /i /k /q /r /s /x /y'
+        bat 'xcopy C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\jenkins-test\dist\ngx-bs-modal-demo\ C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\jenkins-test'
 
         // bat 'cd dist/ngx-bs-modal-demo'
         // bat 'rmdir node_modules'
