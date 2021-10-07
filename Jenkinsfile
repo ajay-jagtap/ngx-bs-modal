@@ -1,7 +1,7 @@
 
 node {
     stage('Checkout SCM') {
-        git branch: 'jenkins-test', url: 'ssh://git@github.com:ajay-jagtap/ngx-bs-modal.git'
+        git branch: 'jenkins-test', url: 'https://github.com/ajay-jagtap/ngx-bs-modal.git'
     }
 
     stage('Install node nodules') {
@@ -22,6 +22,8 @@ node {
 
     stage('Push to Github') {
         // bat 'git reset --hard'
+        bat 'git config --global user.email "ajayjagtap.10@gmail.com"'
+        bat 'git config --global user.password "Ajayjagtap@123"'
         bat 'git checkout  -f gh-pages'
         // bat 'cd dist/ngx-bs-modal-demo'
         bat 'git add dist/ngx-bs-modal-demo'
