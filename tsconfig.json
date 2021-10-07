@@ -12,7 +12,7 @@
     "importHelpers": true,
     "paths": {
       "ngx-bs-modal": [
-        "dist/ngx-bs-modal"
+        "./dist/ngx-bs-modal"
       ]
     },
     "target": "es2015",
