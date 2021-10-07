@@ -21,6 +21,7 @@ node {
     }
 
     stage('Push to Github') {
+        bat 'git reset --hard'
         bat 'cd dist/ngx-bs-modal-demo'
         bat 'git checkout gh-pages'
         bat 'git add .'
