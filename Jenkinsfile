@@ -21,12 +21,13 @@ node {
     }
 
     stage('Push to Github') {
-        // bat 'git reset --hard'
         bat 'git config --global user.email "ajayjagtap.10@gmail.com"'
+        bat 'git config --global user.name "ajay-jagtap"'
         bat 'git config --global user.password "Ajayjagtap@123"'
         bat 'git checkout  -f gh-pages'
         // bat 'cd dist/ngx-bs-modal-demo'
         bat 'git add dist/ngx-bs-modal-demo'
+        // bat 'git reset --hard'
         bat 'git commit -m "Pushed changes form jenkins"'
         bat 'git push'
     }
