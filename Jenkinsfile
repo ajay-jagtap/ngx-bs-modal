@@ -19,4 +19,12 @@ node {
     stage('Build Project') {
         bat 'npm run build'
     }
+
+    stage('Push to Github') {
+        bat 'cd /dist/ngx-bs-modal-demo'
+        bat 'git checkout gh-pages'
+        bat 'git add .'
+        bat 'git commit -am "Pushed changes form jenkins"'
+        bat 'git push'
+    }
 }
