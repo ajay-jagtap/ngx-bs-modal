@@ -4,7 +4,7 @@ node {
         git branch: 'jenkins-test', url: 'https://github.com/ajay-jagtap/ngx-bs-modal.git'
     }
 
-    stage('Install node nodules') {
+    stage('Install node nodules') { 
         bat 'npm install'
     }
 
