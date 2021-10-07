@@ -1,7 +1,7 @@
 
 node {
     stage('Checkout SCM') {
-        git branch: 'jenkins-test', url: 'https://github.com/ajay-jagtap/ngx-bs-modal.git'
+        git branch: 'jenkins-test', url: 'git@github.com:ajay-jagtap/ngx-bs-modal.git'
     }
 
     stage('Install node nodules') {
@@ -25,7 +25,7 @@ node {
         bat 'git checkout  -f gh-pages'
         // bat 'cd dist/ngx-bs-modal-demo'
         bat 'git add dist/ngx-bs-modal-demo'
-        bat 'git commit -am "Pushed changes form jenkins"'
+        bat 'git commit -m "Pushed changes form jenkins"'
         bat 'git push'
     }
 }
