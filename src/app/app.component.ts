@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DialogService } from 'ngx-bs-modal';
+import { DialogService } from 'dist/ngx-bs-modal';
 import { AlertComponent } from "./alert/alert.component";
 import { ConfirmComponent } from "./confirm/confirm.component";
 import { PromptComponent } from "./prompt/prompt.component";

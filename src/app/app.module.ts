@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BootstrapModalModule } from 'ngx-bs-modal';
+import { BootstrapModalModule } from 'dist/ngx-bs-modal';
 
 import { AppComponent } from './app.component';
 import { AlertComponent } from './alert/alert.component';

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DialogComponent, DialogService } from "ngx-bs-modal";
+import { DialogComponent, DialogService } from "dist/ngx-bs-modal";
 
 export interface PromptModel {
   title:string;
