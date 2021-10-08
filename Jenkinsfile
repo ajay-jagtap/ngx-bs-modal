@@ -17,7 +17,7 @@ node {
     }
 
     stage('Build Project') {
-        bat 'npm run build'
+        bat "npm run build-prod"
     }
 
     stage('Push to Github') {
