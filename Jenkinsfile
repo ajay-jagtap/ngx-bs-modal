@@ -25,19 +25,22 @@ node {
         // bat 'git config --global user.name "ajay-jagtap"'
         // bat 'git config --global user.password "Ajayjagtap@123"'
         bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test\\dist\\ngx-bs-modal-demo\\ C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup'
-        // bat 'cd dist/ngx-bs-modal-demo'
         bat 'git stash -u'
         bat 'git checkout  -f gh-pages'
         bat 'git pull'
         bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup\\ C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test'
+        // bat 'git add .'
+        // bat 'git commit -m "Pushed changes form jenkins"'
+        // bat 'git push'
+
+        // bat 'cd dist/ngx-bs-modal-demo'
+
         // bat 'rmdir dist /s'
         // bat 'rmdir node_modules /s'
         // bat 'git add dist/ngx-bs-modal-demo'
-        bat 'git add .'
+
         // bat 'git reset -- node_modules/*'
         // bat 'git reset -- dist/*'
         // bat 'git reset --hard'
-        bat 'git commit -m "Pushed changes form jenkins"'
-        bat 'git push'
     }
 }
