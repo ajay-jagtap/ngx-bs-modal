@@ -21,7 +21,8 @@ node {
     }
 
     stage('Push to Github') {
-        bat 'ngh --dir=dist/ngx-bs-modal-demo'
+        // bat 'ngh --dir=dist/ngx-bs-modal-demo'
+        bat 'npx angular-cli-ghpages --dir=dist/ngx-bs-modal-demo'
 
         // bat 'git config --global user.email "ajayjagtap.10@gmail.com"'
         // bat 'git config --global user.name "ajay-jagtap"'
