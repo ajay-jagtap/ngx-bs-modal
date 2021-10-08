@@ -6,7 +6,8 @@ node {
 
     stage('Checkout SCM') {
         bat 'git status'
-        bat 'git pull origin jenkins-test'
+        bat 'git pull'
+        // bat 'git pull origin jenkins-test'
         bat 'git status'
     }
 
