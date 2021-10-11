@@ -28,8 +28,8 @@ node {
     }
 
     stage('Push to Github') {
-        bat 'rmdir C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\backup /s'
-        bat 'mkdir C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\backup'
+        bat 'rmdir C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup /s'
+        bat 'mkdir C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup'
         bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test\\dist\\ngx-bs-modal-demo\\ C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup'
 
         bat 'F:'
