@@ -28,7 +28,7 @@ node {
     }
 
     stage('Push to Github') {
-        bat 'rmdir C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup /s'
+        bat 'rmdir C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup /s /q'
         bat 'mkdir C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup'
         bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test\\dist\\ngx-bs-modal-demo\\ C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup'
 
@@ -39,7 +39,7 @@ node {
         bat 'git pull'
         bat 'git status'
 
-        bat 'rmdir F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo /s'
+        bat 'rmdir F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo /s /q'
         bat 'mkdir F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo'
         bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup\\ F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo'
 
@@ -61,8 +61,8 @@ node {
 
         // bat 'cd dist/ngx-bs-modal-demo'
 
-        // bat 'rmdir dist /s'
-        // bat 'rmdir node_modules /s'
+        // bat 'rmdir dist /s /q'
+        // bat 'rmdir node_modules /s /q'
         // bat 'git add dist/ngx-bs-modal-demo'
 
         // bat 'git reset -- node_modules/*'
