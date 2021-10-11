@@ -1,15 +1,15 @@
 
 node {
-    // stage('Checkout SCM') {
-    //     git branch: 'jenkins-test', url: 'https://github.com/ajay-jagtap/ngx-bs-modal.git'
-    // }
-
     stage('Checkout SCM') {
-        bat 'git status'
-        bat 'git pull'
-        // bat 'git pull origin jenkins-test'
-        bat 'git status'
+        git branch: 'jenkins-test', url: 'https://github.com/ajay-jagtap/ngx-bs-modal.git'
     }
+
+    // stage('Checkout SCM') {
+    //     bat 'git status'
+    //     bat 'git pull'
+    //     // bat 'git pull origin jenkins-test'
+    //     bat 'git status'
+    // }
 
     stage('Install node nodules') {
         bat 'npm install'
