@@ -28,6 +28,22 @@ node {
     }
 
     stage('Push to Github') {
+        bat 'rmdir C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\backup /s'
+        bat 'mkdir C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\backup'
+        bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\jenkins-test\\dist\\ngx-bs-modal-demo\\ C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup'
+
+        bat 'F:'
+        bat 'cd F:\\Angular\\ngx-bs-modal\\Angular11'
+        bat 'git stash -u'
+        bat 'git checkout  -f gh-pages'
+        bat 'git pull'
+        bat 'git status'
+
+        bat 'rmdir F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo /s'
+        bat 'mkdir F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo'
+        bat 'copy C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\backup\ F:\\Angular\\ngx-bs-modal\\Angular11\\dist\\ngx-bs-modal-demo'
+
+
         // bat 'npm run ngh --dir=dist/ngx-bs-modal-demo'
         bat 'npx angular-cli-ghpages --dir=dist/ngx-bs-modal-demo'
 
