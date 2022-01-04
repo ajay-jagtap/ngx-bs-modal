@@ -1,6 +1,6 @@
 {
   "name": "ngx-bs-modal-demo",
-  "version": "1.0.6",
+  "version": "2.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
